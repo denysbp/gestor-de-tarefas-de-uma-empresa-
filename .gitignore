@@ -1,0 +1,5 @@
+__pychache__/
+SECRET_KEY
+emails/
+funcionarios/
+db.sqlite3

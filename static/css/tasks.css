@@ -1,0 +1,63 @@
+.Tmodal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.modal-Tcontent {
+  position: relative;
+  overflow: auto;
+  
+  background: #ffffff;
+  width: 400px;
+  height: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal-Tcontent h2{
+    font-family: Arial;
+    font-size: 50px;
+    position: absolute;
+    top: -50px;
+    left: 145px;
+}
+.modal-Tcontent h3{
+    font-size: 25px;
+}
+.modal-Tcontent p{
+    margin: 2px;
+}
+.task-card {
+    border: 2px solid;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.task-actions button {
+    position: static;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.upload-box i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.upload-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+

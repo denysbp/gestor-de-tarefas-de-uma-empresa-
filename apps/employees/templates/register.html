@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COGNIX</title>
+    <link rel="stylesheet" href="/static/css/login-register.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    {% load static %}
+    <div class="wrapped">
+        <form method="POST" action="{% url 'register' %}">
+            {% csrf_token %}
+            <h1>register</h1>
+            {% for message in messages %}
+            <div class="messages">
+                <h3>{{ message }}</h3>
+            </div>
+            {% endfor %}
+            <div class="input-box">
+                <input type="text" placeholder="username" name="username" required>
+                <i class='bx  bx-user'></i> 
+                
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="email" name="Email"required>
+                <i class='bx  bx-envelope'></i>  
+                
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" name="password" required minlength="6">
+                <i class='bx  bx-lock'></i>  
+                
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required minlength="6" name="password1">
+                <i class='bx  bx-lock'></i> 
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot password?
+                </a>
+            </div>
+                <button type="submit" class="btn">registrar</button>
+                <div class="register-link">
+                    <p>Já tem uma conta?<a href="{% url 'login' %}">login</a></p>
+                </div>
+        </form>
+
+    </div>
+</body>
+</html>
