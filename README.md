@@ -1,3 +1,3 @@
 # Gestor de tarefas 
 
-Eu tentei idealizar uma empresa a que denominei COIGNIX, uma empresa de tecnologias, e que pretendo criar mais projectos com o mesmo nome,a principio é simples , o funcionario loga na conta e vê as tasks a que lhe foram denominadas, ou as que ele ainda não completou, e assim que estiver completo ele submete os arquivos, ou a pasta.
+Eu idealizei uma empresa chamada **COGNIX**, uma empresa de tecnologias, e pretendo criar mais projetos com o mesmo nome. A princípio, a ideia é simples: o funcionário faz login na sua conta e vê as tarefas que lhe foram atribuídas ou aquelas que ainda não concluiu. Assim que terminar uma tarefa, ele submete os arquivos ou a pasta correspondente.
