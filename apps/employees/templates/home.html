@@ -27,9 +27,15 @@
   <div id="profileModal" class="modal">
     <div class="modal-content">
       <h2>Perfil</h2>
+      {% if foto %}
       <div class="profile-img">
       <img src="{{ foto.url }}">  <!-- <button ><i class='bx  bx-camera-alt'></i></button> -->
       </div> 
+      {% else %}
+      <div class="profile-img">
+      <img src="/static/img/sem-foto.png">
+      </div> 
+      {% endif %}
       <div class="lens">
         <p><strong>Nome:</strong> {{ username }}</p>
         <p><strong>Email:</strong> {{ email }}</p>
